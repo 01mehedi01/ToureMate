@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/registerfragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/registerfragment"
+    tools:context="com.example.user.touremate.RegistrationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+   <TextView
+       android:id="@+id/registration_WelcomeTitle"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Create a account "
+       android:gravity="center_horizontal"
+       android:textStyle="bold"
+       android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/registration_Useraname"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name "
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/registration_PhoneNumber"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextstyle"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/registration_Password"
+            android:hint="Password "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittextstyle"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/registration_Conform_Password"
+            android:hint="Confrom pass "/>
+
+
+     </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:background="@drawable/round_button_status"
+        android:id="@+id/Registration_button"
+       />
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_margin="7dp"
+    android:background="#d6cdcd"
+    app:cardCornerRadius="8dp"
+    android:elevation="6dp">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:textAppearance="?android:textAppearanceLarge"
+            android:transitionName="@string/transtion_title"
+            android:id="@+id/card_event_name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/card_event_budget"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/card_event_start_date"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date "
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

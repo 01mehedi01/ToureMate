@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ToureMate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transtion_title">title</string>
+    <string name="transtion_Body">body</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="weather_api_key">dbba89c2265e5904719f53056829039d</string>
+    <string name="Direction_API_KEY">dbba89c2265e5904719f53056829039d</string>
+
+    <string name="google_map_api">AIzaSyCH9TtBDot_6KVTXgmr4p5nWfTV5onjekk</string>
+    <string name="google_Places_api">AIzaSyCd8qkTfbT_UAQWcnoDlq5TgcyQFVYThgc</string>
+    <string name="google_direction_api">AIzaSyBJ4qobfZbS0-_BiQlg4M9afnNRBfk7NnQ</string>
+
+    <string name="Search_City">Enter City</string>
+
+    <string name="create_plan">Create Plan</string>
+    <string name="direction">Direction</string>
+    <string name="camera">Camera</string>
+    <string name="weather">Weather</string>
+    <string name="qrcode">QrCode</string>
+
+</resources>

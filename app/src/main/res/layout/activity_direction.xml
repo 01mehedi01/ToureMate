@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.touremate.DirectionActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/derectiontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="Direction"
+            android:textColor="#000"
+            android:textSize="21sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnInstruction_Id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/list"
+        android:enabled="false"
+        android:onClick="showInstuction"/>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnDirection_Id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/direction_icon"
+        android:enabled="false"
+        android:onClick="showDirection"/>
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnnextRoute_Id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/nextroute_icon"
+        android:enabled="false"
+        android:onClick="nextRoute"/>
+
+    <Button
+        android:layout_marginTop="150dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnGeofence_Id"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:enabled="false"
+        android:background="@drawable/geofence_icon"
+        android:onClick="addGeofence"/>
+
+    <FrameLayout
+        android:id="@+id/mapcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+
+</LinearLayout>

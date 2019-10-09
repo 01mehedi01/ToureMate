@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:hint="Toure Name"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update_event_EventName"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:hint="Toure Budget"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update_event_EventBudget"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="Start Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update_event_EventStart"
+        />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="Return Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update_event_Eventreturn"
+        />
+
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/Update_event_Button_create"
+        android:background="@drawable/round_button_status"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Update"/>
+</LinearLayout>

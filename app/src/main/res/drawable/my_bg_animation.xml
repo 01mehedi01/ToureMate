@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/secoun_layout"
+        android:duration="4500">
+    </item>
+    <item
+        android:drawable="@drawable/first_layout"
+        android:duration="4500">
+    </item>
+    <item
+        android:drawable="@drawable/therd_layout"
+        android:duration="4500">
+    </item>
+
+</animation-list>

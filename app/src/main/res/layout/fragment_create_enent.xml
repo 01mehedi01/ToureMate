@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/alart_bg"
+    tools:context="com.example.user.touremate.CreateEnentFragment">
+
+    <TextView
+
+        android:id="@+id/create_event_titel"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a Event "/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/create_event_EventName"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Toure Name"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/create_event_EventBudget"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.design.widget.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Toure Budget"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="Return Date(Double click)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_event_Eventreturn"
+            />
+
+
+        <Button
+            android:layout_marginBottom="20dp"
+            android:id="@+id/create_event_Button_create"
+            android:background="@drawable/rippleeffect2"
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Create"/>
+
+    </LinearLayout>
+
+</LinearLayout>

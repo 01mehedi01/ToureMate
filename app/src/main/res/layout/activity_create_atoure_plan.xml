@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.touremate.CreateATourePlanActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toureplantoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dp"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="Crate Aplan "
+            android:textColor="#000"
+            android:textSize="21sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+<LinearLayout
+    android:layout_marginTop="55dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <Button
+
+        android:background="@drawable/btn_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a Event"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="CreateaEvent"
+        />
+
+
+
+    <include layout="@layout/rycycler_view_show" />
+
+
+
+
+</LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/create_event_frameLayout">
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

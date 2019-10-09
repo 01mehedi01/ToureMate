@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <ImageButton
+        android:id="@+id/choose_cameras_capture"
+        android:paddingStart="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/capcamera"
+        android:paddingLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp" />
+
+    <ImageButton
+        android:id="@+id/choose_videos_capture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/videos"
+        android:paddingLeft="40dp" />
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_setting_ID"
+        android:title="Setting"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+    </item>
+
+    <item android:id="@+id/manu_home_page_ID"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/manu_login_ID"
+        android:title="Login"
+        app:showAsAction="never">
+    </item>
+
+    <item android:id="@+id/manu_logout_ID"
+        android:title="Login Out"
+        app:showAsAction="never">
+    </item>
+    <item android:id="@+id/manu_Delete_event"
+        android:title="Delete"
+        app:showAsAction="never">
+    </item>
+
+</menu>

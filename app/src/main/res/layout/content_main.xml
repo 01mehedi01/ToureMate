@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mylayoutcontraint"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.touremate.ChooseActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="top"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <RelativeLayout
+                android:background="@color/colorGray"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:id="@+id/viewpagerid">
+
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+
+                    android:gravity="right"
+                    android:layout_marginRight="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:id="@+id/indicator">
+
+                    </me.relex.circleindicator.CircleIndicator>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/containtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+                    <android.support.v7.widget.CardView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/createvent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_marginRight="2dp"
+                            android:background="#F5F3F3"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/toure"
+                                android:layout_width="150px"
+                                android:layout_height="150px"
+                                />
+                            <TextView
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/create_plan"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/weather"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+                        <LinearLayout
+                            android:layout_marginLeft="2dp"
+                            android:background="#F5F3F3"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/weathericon"
+                                android:layout_width="150px"
+                                android:layout_height="150px"
+                                />
+                            <TextView
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/weather"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    >
+                    <android.support.v7.widget.CardView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/direction"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_marginRight="2dp"
+                            android:background="#F5F3F3"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/root"
+                                android:layout_width="150px"
+                                android:layout_height="150px"
+                                />
+                            <TextView
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/direction"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/camera"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp">
+                        <LinearLayout
+                            android:layout_marginLeft="2dp"
+                            android:background="#F5F3F3"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:src="@drawable/camra1"
+                                android:layout_width="150px"
+                                android:layout_height="150px"
+                                />
+                            <TextView
+                                android:textAppearance="?android:textAppearanceLarge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14dp"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/camera"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGray"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
