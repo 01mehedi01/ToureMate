@@ -1,12 +1,14 @@
 
-# Create a toure Plan
-      Create a toure Plan where an user wishes to travel And write expense as a note against a                 
-      perticular toure plan when a user make travel .    
+#   ToureMate
+      Create a  toure plan . Save travel Information ,capture Moment , And show Direction
 
-#     Using  
-      Swift , Xcode
-      Core Data
-      Create relationship Between Two table
+ #   Using  
+ ### Java, AndroidStudio
+ ### SqliteDataBase , Sharedpreferences
+
+
+#
+
 
 
 <img src="images/Screenshot_2019-10-09-20-36-32-386_com.example.user.touremate.png" width="250" hight="600" >          <img 
