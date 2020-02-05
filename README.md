@@ -1,4 +1,13 @@
-# ToureMate
+
+# Create a toure Plan
+      Create a toure Plan where an user wishes to travel And write expense as a note against a                 
+      perticular toure plan when a user make travel .    
+
+#     Using  
+      Swift , Xcode
+      Core Data
+      Create relationship Between Two table
+
 
 <img src="images/Screenshot_2019-10-09-20-36-32-386_com.example.user.touremate.png" width="250" hight="600" >          <img 
 src="images/Screenshot_2019-10-09-20-36-38-944_com.example.user.touremate.png" width="250" hight="600" >               <img 
